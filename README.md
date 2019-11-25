@@ -6,6 +6,7 @@ Implementation is done in python3.6. No external library is used.
 <br> Although it implements Group Management System, this code can be used as a started code for any quick project.
 
 ### Files
+All the source code is inside `src` directory.
 
 #### command_line_interface.py
 This file represents Command Line Interface module. It interacts directly with `GroupManager`, but not with data access module.
@@ -30,7 +31,8 @@ This file contains definition of commonly occurring exceptions.
 ## Usage/Execution
 The application can be started using command
 ```
-python main.py
+cd src
+python src/main.py
 ```
 The program load the data from data directory and provides a command prompt for basic functionality.
 ### Commands

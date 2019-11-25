@@ -3,7 +3,7 @@ from utils import csv_to_dict, csv_to_relationship
 
 
 class CsvDao:
-    def __init__(self, data_dir='data'):
+    def __init__(self, data_dir='../data'):
         self._data_dir = data_dir
         # entities
         self.users = None
