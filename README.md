@@ -21,24 +21,24 @@ Implementation is done in python3.6. No external library is used.
 ### Files
 All the source code is inside `src` directory.
 
-#### command_line_interface.py
+* **command_line_interface.py**
 This file represents Command Line Interface module. It interacts directly with `GroupManager`, but not with data access module.
 <br> It extends [Cmd](https://docs.python.org/3/library/cmd.html#cmd.Cmd) class, and can be started by `cmdloop` function.
 
-#### group_manager.py
+* **group_manager.py**
 This file represents Group Management module. It interacts directly with data access module.
 It provides functions: `check_user_in_group`, `add_user_to_group` and `remove_user_from_group`.
 
-#### csv_dao.py
+* **csv_dao.py**
 This file represents CSV Data Access Object module. It interacts with storage(csv files) to provide data access to other modules.
 
-#### models.py
+* **models.py**
 This file contains the definition of entities.
 
-#### main.py
+* **main.py**
 This file stitch together all the module into an application.
 
-#### exceptions.py
+* **exceptions.py**
 This file contains definition of commonly occurring exceptions.
 
 ## Usage/Execution
