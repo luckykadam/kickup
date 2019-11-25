@@ -1,6 +1,19 @@
 # kickup
 Kickup: Template for Quick Projects (Machine Coding Interviews)
 
+## About
+This repo serves as a great starting point for fast prototype projects.
+* Specially useful in Machine Coding interviews, when time is limited (~1 hour) and you can't afford to waste time on boiler plate code.
+* Implementation of Data Access Layer (csv) and Command Line Interface is provided, which are essential components of a demoable project.
+* Compelte code is under 200 line of code, which makes it easy to understand and extend.
+
+## Design
+The code is designed as three modules.
+1. Command line interface: The module responsible for interaction with the end-user. It can be replaced with any kind of interface without affecting other module. For example: it can be replaced by REST API.
+2. Business Logic: This module contains the core logic of the application.
+3. Data Access Object: This module is responsible for interacting with the storage and provide the data to the application. Currently it reads from csv file, and keeps the data in memory. It can easily be replaced with another DAO which interacts with Database.
+
+
 ## Implementation
 Implementation is done in python3.6. No external library is used.
 <br> Although it implements Group Management System, this code can be used as a started code for any quick project.
